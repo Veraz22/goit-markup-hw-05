@@ -481,7 +481,86 @@
             </li>
           </ul>
         </div>
+
+        <!-- Footer-subscribe -->
+        <div class="footer-subscribe-form">
+          <form name="subscribe" class="subscribe-form">
+            <label for="email-subscribe" class="footer-social-text"
+              >Subscribe</label
+            >
+            <input
+              class="footer-subscribe-input"
+              id="email-subscribe"
+              type="email"
+              name="email-subscribe"
+              placeholder="E-mail"
+            />
+          </form>
+        </div>
+
+        <button type="button" class="footer-subscribe-button">
+          Subscribe
+          <svg width="24" height="24" class="subscribe-button-icon">
+            <use href="./images/icons.svg#icon-subscribe"></use>
+          </svg>
+        </button>
       </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg width="8" height="8" class="close-icon">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form name="contact-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <input
+              id="user-name"
+              type="text"
+              name="user-name"
+              class="modal-input"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Phone</label>
+            <input
+              id="user-tel"
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <input
+              id="user-email"
+              type="email"
+              name="user-email"
+              class="modal-input"
+            />
+          </div>
+          <div class="modal-fiel">
+            <label for="comment" class="modal-label">Comment</label>
+            <textarea
+              class="modal-textarea"
+              id="comment"
+              type="text"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+        </form>
+        <button type="submit" class="hero-section-button">Send</button>
+      </div>
+    </div>
+
+    <!-- END Modal -->
   </body>
 </html>
